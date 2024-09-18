@@ -13,7 +13,7 @@ router.delete('/api/usuarios/delete/:id', usuarios.deleteById); // Eliminar un u
 module.exports = router;
 
 //Ruta para libros
-const libros = require('../controllers/Libros.controller.js'); // Controlador de libros
+const libros = require('../controllers/Libros.controller.js'); 
 
 router.post('/api/libros/create', libros.create); //crear nuevo libro
 router.get('/api/libros/all', libros.retrieveAllLibros); //obtener todos los libros
