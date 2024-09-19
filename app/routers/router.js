@@ -3,6 +3,8 @@ let router = express.Router();
 
 //Ruta para usuario
 const usuarios = require('../controllers/Usuarios.controller.js'); // Cambiado a usuarios
+const libros = require('../controllers/Libros.controller.js'); 
+const autores = require('../controllers/Autores.controller.js'); // Controlador de autores
 
 router.post('/api/usuarios/create', usuarios.create); // Crear un nuevo usuario
 router.get('/api/usuarios/all', usuarios.retrieveAllUsuarios); // Obtener todos los usuarios
@@ -10,20 +12,11 @@ router.get('/api/usuarios/onebyid/:id', usuarios.getUsuarioById); // Obtener un 
 router.put('/api/usuarios/update/:id', usuarios.updateById); // Actualizar un usuario por ID
 router.delete('/api/usuarios/delete/:id', usuarios.deleteById); // Eliminar un usuario por ID
 
-module.exports = router;
-
-//Ruta para libros
-const libros = require('../controllers/Libros.controller.js'); 
-
 router.post('/api/libros/create', libros.create); //crear nuevo libro
 router.get('/api/libros/all', libros.retrieveAllLibros); //obtener todos los libros
 router.get('/api/libros/onebyid/:id', libros.getLibroById); // Cambiado a id
 router.put('/api/libros/update/:id', libros.updateById); 
 router.delete('/api/libros/delete/:id', libros.deleteById);
-
-module.exports = router;
-
-const autores = require('../controllers/Autores.controller.js'); // Controlador de autores
 
 router.post('/api/autores/create', autores.create); // Crear nuevo autor
 router.get('/api/autores/all', autores.retrieveAllAutores); // Obtener todos los autores
