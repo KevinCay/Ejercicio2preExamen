@@ -12,10 +12,10 @@ router.get('/api/usuarios/onebyid/:id', usuarios.getUsuarioById); // Obtener un 
 router.put('/api/usuarios/update/:id', usuarios.updateById); // Actualizar un usuario por ID
 router.delete('/api/usuarios/delete/:id', usuarios.deleteById); // Eliminar un usuario por ID
 
-router.post('/api/libros/create', libros.create); //crear nuevo libro
-router.get('/api/libros/all', libros.retrieveAllLibros); //obtener todos los libros
-router.get('/api/libros/onebyid/:id', libros.getLibroById); // Cambiado a id
-router.put('/api/libros/update/:id', libros.updateById); 
+//Tabla libros
+router.post('/api/libros/create', libros.create);
+router.get('/api/libros/onebyid/:id', libros.getLibroById);
+router.put('/api/libros/update/:id', libros.updateById);
 router.delete('/api/libros/delete/:id', libros.deleteById);
 
 router.post('/api/autores/create', autores.create); // Crear nuevo autor

@@ -1,9 +1,9 @@
 
 const env = {
-  database: 'antigua_umg2024_2103_dfcc_u3qj',
-  username: 'antigua_umg2024_2103_dfcc_user',
-  password: 'kziBqHpntBtjHEyX76dPDVTiWTT9b2Je',
-  host: 'dpg-cru3732j1k6c73bm1je0-a',
+  database: 'antigua_umg2024_2103_e248',
+  username: 'antigua_umg2024_2103_e248_user',
+  password: 'GneAtTocEf776SxCABuqfrRs4iwyuKOK',
+  host: 'dpg-cruu1maj1k6c73fpph5g-a',
   dialect: 'postgres',
   pool: {
     max: 5,
