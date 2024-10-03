@@ -3,7 +3,7 @@ let router = express.Router();
 
 //Ruta para usuario
 const usuarios = require('../controllers/Usuarios.controller.js'); // Cambiado a usuarios
-const libros = require('../controllers/Libros.controller.js'); 
+const libro = require('../controllers/Libros.controller.js'); 
 const autores = require('../controllers/Autores.controller.js'); // Controlador de autores
 
 router.post('/api/usuarios/create', usuarios.create); // Crear un nuevo usuario
